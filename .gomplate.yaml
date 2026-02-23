@@ -1,0 +1,12 @@
+inputFiles:
+  - templates/main/realm.tpl
+outputFiles:
+  - out/realm.yaml
+
+templates:
+  templates:
+    url: templates/
+
+context:
+  .:
+    url: realm.yaml

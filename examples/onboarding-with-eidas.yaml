@@ -1,0 +1,32 @@
+realm: onboarding
+emailAsUsername: true
+registration:
+  enabled: true
+  termsAndConditions:
+    enabled: true
+
+authenticator:
+  enabled: false
+
+eidas:
+  enabled: true
+  naturalPerson:
+    enabled: true
+  legalPerson:
+    enabled: true
+  termsAndConditions:
+    enabled: true
+
+roles:
+  - name: APPLICANT
+    description: End user responsible for onboarding
+    default: true
+
+frontendClient:
+  enabled: true
+
+serviceAccount:
+  enabled: true
+  clientId: onboarding-sa
+  realmManagementRoles:
+    - manage-users
