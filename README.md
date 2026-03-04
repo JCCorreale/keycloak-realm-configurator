@@ -48,6 +48,8 @@ See the [`keycloak-config-cli`](https://github.com/adorsys/keycloak-config-cli?t
 | registration.termsAndConditions.enabled | boolean | Enables Terms & Conditions during registration                 |
 | authenticator                           | object  | Custom authenticator configuration                             |
 | authenticator.enabled                   | boolean | Enables/disables SIMPL Keycloak Authenticator                  |
+| test                                    | object  | Test configuration                                             |
+| test.enabled                            | boolean | Enable test configuration                                      |
 | eidas                                   | object  | eIDAS integration configuration                                |
 | eidas.enabled                           | boolean | Enables eIDAS integration                                      |
 | eidas.naturalPerson                     | object  | Natural person eIDAS configuration                             |
@@ -67,3 +69,8 @@ See the [`keycloak-config-cli`](https://github.com/adorsys/keycloak-config-cli?t
 | serviceAccount.clientId                 | string  | Client ID of the service account                               |
 | serviceAccount.realmManagementRoles     | array   | Realm management roles assigned to service account             |
 | serviceAccount.realmManagementRoles[]   | string  | Individual realm management role                               |
+
+### `test.enabled`
+
+The `test.enabled` property has the following effects:
+* Enable direct access grant in frontend client

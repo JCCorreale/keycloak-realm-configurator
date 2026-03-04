@@ -5,6 +5,9 @@ registration:
   termsAndConditions:
     enabled: true
 
+test:
+  enabled: true
+
 authenticator:
   enabled: false
 

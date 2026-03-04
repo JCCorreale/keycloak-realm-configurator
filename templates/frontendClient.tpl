@@ -2,6 +2,10 @@
   enabled: true
   publicClient: true
 
+  {{- if .test.enabled }}
+  directAccessGrantsEnabled: true
+  {{- end }}
+
   redirectUris:
     - '*'
 
