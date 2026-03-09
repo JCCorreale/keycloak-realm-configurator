@@ -1,0 +1,87 @@
+realm: authority
+emailAsUsername: true
+registration:
+  enabled: true
+  termsAndConditions:
+    enabled: true
+
+test:
+  enabled: true
+
+authenticator:
+  enabled: false
+
+eidas:
+  enabled: true
+  naturalPerson:
+    enabled: true
+  legalPerson:
+    enabled: true
+  termsAndConditions:
+    enabled: true
+
+roles:
+  - name: APPLICANT
+    description: End user manages onboarding requests for dataspace participants signing up via the public dataspace onboarding site. His/Her role is to create onboarding requests and respond to Tier 2 (NOTARY) authorization interactions to ensure approval.
+    default: true
+  - name: CATALOG_R
+    description: "-"
+    default: true
+  - name: GA_SCHEMA_ADMIN
+    description: Schema Manager Admin, Tier-1 Role for Schema Admin
+    default: true
+  - name: GA_SCHEMA_VIEWER
+    description: Schema Manager Viewer, Tier-1 Role for Schema Viewer
+    default: true
+  - name: IATTR_M
+    description: This role is present only in the Dataspace Governance Authority and its duties are to cover the whole lifecycle of Identity Attributes, from the creation and management to the assignment to participants
+    default: true
+  - name: KIBANA_ADMIN
+    description: Kibana Admin, Role for accessing Kibana as an admin (binded to local Kibana user)
+    default: true
+  - name: KIBANA_BUSINESS_USER
+    description: Kibana Business User, Role for accessing Kibana as a business user (binded to local Kibana user)
+    default: true
+  - name: NOTARY
+    description: Tier 2 authorisation operator, the one who is in charge of taking care of onboarding requests and follow their process. It will ask for further documents, it will comment on the onboarding requests, and reject/approve the requests
+    default: true
+  - name: ONBOARDER_M
+    description: Tier 2 setup administrator role, the one who is in charge of finalising the tier 2 setup of an agent installation
+    default: true
+  - name: Ro-MU-A
+    description: Role defined in XFSC Federated Catalogue: Participant Administrator
+    default: true
+  - name: Ro-MU-CA
+    description: Role defined in XFSC Federated Catalogue: Catalogue Administrator
+    default: true
+  - name: Ro-Pa-A
+    description: Role defined in XFSC Federated Catalogue: Participant User Administrator
+    default: true
+  - name: Ro-SD-A
+    description: Role defined in XFSC Federated Catalogue: Self-Description Administrator
+    default: true
+  - name: SD_CONSUMER
+    description: "-"
+    default: true
+  - name: SD_PUBLISHER
+    description: "-"
+    default: true
+  - name: SERVICE_PROVIDER
+    description: "-"
+    default: true
+  - name: SIMPL_USER
+    description: Role for SIMPL users with basic access rights
+    default: true
+  - name: T1UAR_M
+    description: Tier 1 user and roles manager. This role will manage local roles and dataspace identity attributes (defining them and assigning them to participant types defining their assignability)
+    default: true
+  - name: T2IAA_M
+    description: User who is in charge of defining and changing the onboarding procedure itself, like setting up the mandatory documents and the rules that will be followed by the onboarding process.
+    default: true
+
+frontendClient:
+  enabled: true
+
+cliClient:
+  enabled: true
+

@@ -7,4 +7,10 @@
   {{- range .realmManagementRoles }}
       - {{ . }}
   {{- end }}
+  {{ with .realmRoles }}
+  realmRoles: 
+  {{- range .realmRoles }}
+      - {{ . }}
+  {{- end }}
+  {{- end }}
 {{- end }}
