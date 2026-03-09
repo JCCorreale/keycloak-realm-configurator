@@ -23,11 +23,10 @@ clients:
 {{- if .frontendClient.enabled }}
 {{ tmpl.Exec "templates/frontendClient.tpl" . | indent 2 }}
 {{- end }}
+{{ tmpl.Exec "templates/serviceAccountClients.tpl" . | indent 2 }}
 
-{{/* Service account template includes both last client and start user list, should be at the end for now */}}
-{{- if .serviceAccount.enabled }}
-{{ tmpl.Exec "templates/serviceAccount.tpl" . }}
-{{- end }}
+users:
+{{ tmpl.Exec "templates/serviceAccountUsers.tpl" . | indent 2 }}
 
 {{- if .eidas.enabled }}
 identityProviders:

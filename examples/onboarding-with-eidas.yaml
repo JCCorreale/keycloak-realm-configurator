@@ -28,8 +28,7 @@ roles:
 frontendClient:
   enabled: true
 
-serviceAccount:
-  enabled: true
-  clientId: onboarding-sa
-  realmManagementRoles:
-    - manage-users
+serviceAccounts:
+  - clientId: onboarding-sa
+    realmManagementRoles:
+      - manage-users
